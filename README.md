@@ -70,6 +70,12 @@ Multibranch pipeline
 --------------------------------------------------
 
 
+Jenkins Shared Library
+Starting code: https://gitlab.com/twn-devops-bootcamp/latest/08-jenkins/jenkins-shared-library/-/tree/starting-code
+Final code: https://gitlab.com/twn-devops-bootcamp/latest/08-jenkins/jenkins-shared-library
+
+1. created new project "jenkins-shared-library"
+2. 
 
 
 
