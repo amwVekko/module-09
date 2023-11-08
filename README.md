@@ -58,6 +58,8 @@ create complete pipeline
 1. moved jenkinsfile from previous section to "jenkinsfile_syntax"
 2. created new jenkinsfile, added tools "maven-3.9"
 3. added steps to build and push image to docker
+4. added new groovyscript and moved steps in it. defined groovy script in jenkinsfile
+5. 
 
 
 
