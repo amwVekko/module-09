@@ -59,7 +59,16 @@ create complete pipeline
 2. created new jenkinsfile, added tools "maven-3.9"
 3. added steps to build and push image to docker
 4. added new groovyscript and moved steps in it. defined groovy script in jenkinsfile
-5. 
+
+--------------------------------------------------
+
+Multibranch pipeline
+1. added multibranch pipeline and scanned for all branches
+2. added when condition to just build if branch = master
+
+
+--------------------------------------------------
+
 
 
 
