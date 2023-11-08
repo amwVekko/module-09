@@ -74,8 +74,17 @@ Jenkins Shared Library
 Starting code: https://gitlab.com/twn-devops-bootcamp/latest/08-jenkins/jenkins-shared-library/-/tree/starting-code
 Final code: https://gitlab.com/twn-devops-bootcamp/latest/08-jenkins/jenkins-shared-library
 
-1. created new project "jenkins-shared-library"
-2. 
+1. added folder for project "jenkins-shared-library"
+2. created two .groovy files
+3. added library in jenkins system settings
+4. defined lib in jenkinsfile and used vars
+5. added package and moved code from building image into it
+6. added groovy function for build, login and push
+7. edited jenkinsfile to use functions
+8. 
+
+--------------------------------------------------
+
 
 
 

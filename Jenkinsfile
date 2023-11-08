@@ -1,34 +1,53 @@
+#!/user/bin/env groovy
+// @Library('jenkins-shared-library') refrence to global lib
+library identifier: "jenkins-shared-library@main", retriever: modernSCM(
+        [$class: 'GitSCMSource',
+        remote: https://github.com/amwVekko/module-08/tree/main/jenkins-shared-library.git ]
+        credentialsId: 'github-login']
+)
+
+
+def gv
+
 pipeline {
     agent any 
+    tools {
+        maven 'maven-3.9'
+    }
 
     stages {
-        stage('Test') {
+        stage("init") {
             steps {
-                echo 'testing application'
-                echo "executing pipeline for branch $BRANCH_NAME"
+                script {
+                    gv = "script.groovy"
+                }
             }
         }
 
-
-        stage('Build') {
-            when {
-                BRANCH_NAME == "master" //main for github
-            }
+        stage('Build jar') {
             steps {
-                echo 'building application'
-                // code here
+                script{
+                    buildJar()
+                }
             }
         }
 
-
+        stage('build and push image') {
+            steps {
+                script{
+                    buildImg 'vekko/demo-app:jma-3.0'
+                    dockerLogin
+                    dockerPush 'vekko/demo-app:jma-3.0'
+                }
+                }
+            }
+        }
 
         stage('Deploy') {
-            when {
-                BRANCH_NAME == "master" //main for github
-            }
             steps {
-                echo 'deploying application'
-                // code here
+                script{
+                    gv.deployApp
+                }
             }
         }
     }
