@@ -81,16 +81,21 @@ Final code: https://gitlab.com/twn-devops-bootcamp/latest/08-jenkins/jenkins-sha
 5. added package and moved code from building image into it
 6. added groovy function for build, login and push
 7. edited jenkinsfile to use functions
-8. 
+
+--------------------------------------------------
+
+Trigger jenkins jobs - webhooks
+
+1. Configured jenkins to automatic build pipeline with https://plugins.jenkins.io/github/
+2. edited jenkinsfile to test webhook
+3. installed multibranch scan plugin
+
 
 --------------------------------------------------
 
 
 
 
-
-
---------------------------------------------------
 
 
 Reference: DevOps Bootcamp and TWN
