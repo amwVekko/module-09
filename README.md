@@ -46,7 +46,32 @@ Part 2
 
 Part 3
 
-1. 
+1. added increment versions to jenkins file
+
+
+--------------------------------------------------
+
+AWS CLI
+
+1. installed awscli version 2 on local WSL
+2. configure aws
+3. created and configured a security group
+4. created ssh keypair
+5. created new EC2 instance via commandline
+6. changed sshkey permissions and tested ssh connection
+
+Part 2.
+
+1. tested some filter for aws ec2 describe-instances
+2. created usergroup and user
+3. added user to group wiht add-user-to-group
+4. attach-group-policy to give permissions to group
+5. set password for the new user
+6. created aws-iam-policy.json
+7. attached policy to usergroup
+8. changed password in UI
+9. created access key for the user
+10. set access and secret access key on cli
 
 
 
